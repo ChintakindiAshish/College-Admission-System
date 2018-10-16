@@ -1,0 +1,10 @@
+create database CodeSkate002;
+
+create table Admin(name varchar(20),password varchar(20),nickname varchar(30));
+insert into Admin values('Ashish','Ashish@123','Ashu');
+
+create table Choice(No int primary key auto_increment,College_name varchar(50),Branch_name varchar(40),Intake int,Cutoff int);
+
+create table Student(ID int primary key auto_increment,Name varchar(30),Nickname varchar(20),Address varchar(30),Mob bigint,DOB date,Marks int,Password varchar(20),Result varchar(50));
+
+create table Student_Choice(Priority int,ID int,No int);
